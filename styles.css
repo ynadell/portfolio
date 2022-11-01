@@ -4127,6 +4127,7 @@ textarea.form-control-lg {
     overflow: visible;
   }
   .navbar-expand-sm .navbar-collapse {
+    display: flex !important;
     flex-basis: auto;
   }
   .navbar-expand-sm .navbar-toggler {
@@ -4179,6 +4180,7 @@ textarea.form-control-lg {
     overflow: visible;
   }
   .navbar-expand-md .navbar-collapse {
+    display: flex !important;
     flex-basis: auto;
   }
   .navbar-expand-md .navbar-toggler {
@@ -4231,6 +4233,7 @@ textarea.form-control-lg {
     overflow: visible;
   }
   .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
