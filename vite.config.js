@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ynadell.github.io/ynadell', // This is important for GitHub Pages
+  base: '/ynadell.github.io/',  // Changed to match repository name
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
