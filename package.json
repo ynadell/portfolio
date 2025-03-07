@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Portfolio Website",
   "type": "module",
-  "homepage": "https://ynadell.github.io/portfolio",
+  "homepage": "https://ynadell.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
