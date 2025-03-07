@@ -1,58 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title>Yashwanth Nadella</title>
-        <link href="styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="d-flex" id="wrapper">
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light" id="name">Yashwanth Nadella</div>
-                <div class="list-group list-group-flush">
-                    <img src="1666334597470.jpg" alt="" class="img-fluid rounded-circle">
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Profile</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="projects.html">Projects</a>
-                    <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" href="resume.html">Resume</a> -->
-                </div>
-                <div id="socials">
-                    <ul style="list-style-type:none;">
-                        <li class="mt-3"><i class="fa fa-linkedin-square" style="font-size:20px;color:blue"></i><a href="https://www.linkedin.com/in/yashwanth-nadella-3013591aa/"> Yashwanth Nadella</a></li>
-                        <li class="mt-3"><i class="fa fa-envelope" style="font-size:20px"></i> <a href="mailto:yashwanthnadella@egmail.com">yashwanthnadella@gmail.com</a></li>
-                        <li class="mt-3"><i class="fa fa-github" style="font-size:20px"></i> <a href="https://github.com/yashwanth-nadella">yashwanth-nadella</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="page-content-wrapper">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                                <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
-                                <!-- <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="container-fluid" style="padding:5%;">
-                    <h1>About Me</h1> 
-                    <div class="mt-4 p-5 text-black rounded-4" style="margin-bottom: 5%;">
-                      <p>
-                       I am a final year Computer Science student at Vellore Institute of Technology. I was an academic intern at the National University of Singapore during which I worked on an NLP project to detect misinformation. In VIT-REX Cyber Forensics lab I experimented with OSINT tools and made a model that can detect fake job postings. Now, I am working as an Integrations Intern at Darwinbox where I am making API connectors using R.
-                      </p> 
-                       <p> 
-                          I strongly believe that Machine Learning can aid in making impactful decisions in the healthcare industry. I am working on how to detect neurodegenerative diseases earlier. I want to learn more about making interpretable models that fit the use cases while balancing their complexity and accuracy. 
-                       </p>
-                    </div>
-                    <div>
-                        <small class="text-muted">Last updated on February 18, 2023</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
     </body>
 </html>
