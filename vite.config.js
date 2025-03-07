@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/portfolio/',
   plugins: [react()],
-  base: '/ynadell.github.io/',  // Changed to match repository name
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
