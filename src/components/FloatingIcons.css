@@ -56,8 +56,8 @@
 }
 
 .django-icon {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   background-color: white;
   border-radius: 10px;
   padding: 0.5rem;
@@ -126,5 +126,191 @@
   }
   75% {
     transform: translate(calc(var(--move-x) * -0.5), calc(var(--move-y) * -1)) rotate(0deg);
+  }
+}
+
+/* Media query for tablets */
+@media (max-width: 1024px) {
+  .floating-icon {
+    font-size: 3rem;
+  }
+  
+  .svg-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .docker-icon {
+    width: 4.5rem;
+    height: 3rem;
+  }
+
+  .kubernetes-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .mongodb-icon {
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .nodejs-icon {
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .django-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .react-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .ray-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .gcp-icon {
+    width: 6rem;
+    height: 4.5rem;
+  }
+
+  .wandb-icon {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .lightning-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+  .floating-icon {
+    font-size: 2.5rem;
+  }
+  
+  .svg-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .docker-icon {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  .kubernetes-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .mongodb-icon {
+    width: 4rem;
+    height: 1.5rem;
+  }
+
+  .nodejs-icon {
+    width: 4rem;
+    height: 2.5rem;
+  }
+
+  .django-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .react-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .ray-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .gcp-icon {
+    width: 4.5rem;
+    height: 3.5rem;
+  }
+
+  .wandb-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .lightning-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .floating-icon {
+    font-size: 2rem;
+  }
+  
+  .svg-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .docker-icon {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .kubernetes-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .mongodb-icon {
+    width: 3.5rem;
+    height: 1.25rem;
+  }
+
+  .nodejs-icon {
+    width: 3.5rem;
+    height: 2rem;
+  }
+
+  .django-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .react-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .ray-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .gcp-icon {
+    width: 3.5rem;
+    height: 2.75rem;
+  }
+
+  .wandb-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .lightning-icon {
+    width: 2rem;
+    height: 2rem;
   }
 } 
