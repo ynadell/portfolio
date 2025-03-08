@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 import ProjectCard from './components/ProjectCard'
+import ExperienceCard from './components/ExperienceCard'
+import FloatingIcons from './components/FloatingIcons'
 
 function App() {
   const experiences = [
@@ -97,6 +99,7 @@ function App() {
       </div>
       
       <section id="about" className="section">
+        <FloatingIcons />
         <div className="section-content">
           <h1>Yashwanth Nadella</h1>
           <p>
@@ -119,22 +122,15 @@ function App() {
           <h2>Experience</h2>
           <div className="experience-list">
             {experiences.map((exp, index) => (
-              <div key={index} className="experience-item">
-                <div className="experience-header">
-                  <div className="experience-header-left">
-                    <h3 className="experience-title">{exp.title}</h3>
-                    <div className="experience-company">{exp.company}</div>
-                    <div className="experience-location">{exp.location}</div>
-                  </div>
-                  <div className="experience-date">{exp.date}</div>
-                </div>
-                <p className="experience-description">{exp.description}</p>
-                <div className="experience-tech">
-                  {exp.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-              </div>
+              <ExperienceCard 
+                key={index}
+                date={exp.date}
+                title={exp.title}
+                company={exp.company}
+                location={exp.location}
+                description={exp.description}
+                technologies={exp.technologies}
+              />
             ))}
           </div>
         </div>

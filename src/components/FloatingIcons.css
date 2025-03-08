@@ -1,0 +1,130 @@
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon {
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.2;
+  animation: float var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+  top: var(--y-position);
+  left: var(--x-position);
+  filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.3));
+}
+
+.svg-icon {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Specific icon size adjustments */
+.docker-icon {
+  width: 7rem;
+  height: 5rem;
+}
+
+.kubernetes-icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.mongodb-icon {
+  width: 8rem;
+  height: 3rem;
+}
+
+.nodejs-icon {
+  width: 8rem;
+  height: 5rem;
+}
+
+.django-icon {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.typescript-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.angular-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.ray-icon {
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ray-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.python-icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+.gcp-icon {
+  width: 10rem;
+  height: 8rem;
+}
+
+.wandb-icon {
+  width: 12rem;
+  height: 12rem;
+}
+
+.lightning-icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.react-icon {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(var(--move-x), var(--move-y)) rotate(0deg);
+  }
+  50% {
+    transform: translate(calc(var(--move-x) * -1), var(--move-y)) rotate(0deg);
+  }
+  75% {
+    transform: translate(calc(var(--move-x) * -0.5), calc(var(--move-y) * -1)) rotate(0deg);
+  }
+} 
